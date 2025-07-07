@@ -1,0 +1,19 @@
+# 売上テーブル（SampleSales）の作成
+CREATE TABLE SampleSales
+(customer_id   CHAR(4) NOT NULL, 
+ store         CHAR(2) NOT NULL,    -- 現在のデータに合わせて2文字
+ price         INTEGER NOT NULL);
+
+INSERT INTO SampleSales VALUES ('A',  '東京',   500    );
+INSERT INTO SampleSales VALUES ('A',  '札幌',   1000   );
+INSERT INTO SampleSales VALUES ('A',  '大阪',   700    );
+INSERT INTO SampleSales VALUES ('B',  '東京',   100    );
+INSERT INTO SampleSales VALUES ('B',  '大阪',   5000   );
+INSERT INTO SampleSales VALUES ('B',  '札幌',   300    );
+INSERT INTO SampleSales VALUES ('B',  '東京',   200    );
+INSERT INTO SampleSales VALUES ('B',  '大阪',   1000   );
+INSERT INTO SampleSales VALUES ('C',  '札幌',   600    );
+INSERT INTO SampleSales VALUES ('C',  '東京',   100    );
+INSERT INTO SampleSales VALUES ('C',  '大阪',   200    );
+INSERT INTO SampleSales VALUES ('C',  '札幌',   50     );
+INSERT INTO SampleSales VALUES ('D',  '東京',   2000   );
